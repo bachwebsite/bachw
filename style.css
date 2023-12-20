@@ -6,6 +6,21 @@ body {
     color: #333;
 }
 
+#main-header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    transition: padding 0.3s ease; /* Adding transition for smooth effect */
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.shrink-header {
+    padding: 10px; /* Adjust the padding for the shrunken header */
+}
+
 header {
     background-color: #3498db;
     color: #fff;
