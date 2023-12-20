@@ -11,21 +11,14 @@ body {
     color: #fff;
     text-align: center;
     padding: 20px;
-    transition: padding 0.3s ease; /* Adding transition for smooth effect */
+    transition: padding 0.3s ease;
     position: fixed;
     width: 100%;
     z-index: 1000;
 }
 
 .shrink-header {
-    padding: 10px; /* Adjust the padding for the shrunken header */
-}
-
-header {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 20px;
+    padding: 10px;
 }
 
 .logo {
@@ -37,30 +30,11 @@ header {
     margin-top: -10px;
 }
 
-.header-links {
-    list-style: none;
-    padding: 0;
-    margin-top: 20px;
-}
-
-.header-links li {
-    display: inline-block;
-    margin-right: 20px;
-}
-
-.header-links a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
-}
-
-.header-links a:hover {
-    color: #ffd700; /* Change color on hover (you can use your desired color) */
-}
-
-section {
+#about,
+#services,
+#testimonials,
+#contact,
+footer {
     margin: 20px;
     padding: 20px;
     background-color: #fff;
@@ -120,4 +94,15 @@ footer {
     position: fixed;
     bottom: 0;
     width: 100%;
+}
+
+.fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 1s ease, transform 1s ease;
+}
+
+.fade-in.show {
+    opacity: 1;
+    transform: translateY(0);
 }
