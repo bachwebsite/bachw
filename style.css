@@ -1,68 +1,54 @@
 body {
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ecf0f1;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
 }
 
-header {
-    background-color: #3498db;
-    color: #fff;
-    text-align: center;
-    padding: 1em 0;
+.header {
+  background-color: #333;
+  color: white;
+  padding: 15px;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+.toggle-btn {
+  font-size: 20px;
+  background: none;
+  border: none;
+  color: white;
+  cursor: pointer;
+  float: left;
 }
 
-nav ul li {
-    display: inline;
-    margin-right: 20px;
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
 }
 
-nav a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 1.2em;
-    transition: color 0.3s ease;
+.sidebar a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 18px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
 }
 
-nav a:hover {
-    color: #2ecc71;
+.sidebar a:hover {
+  color: #f1f1f1;
 }
 
-.card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    margin: 20px;
-    transition: transform 0.3s ease-in-out;
-}
-
-.card:hover {
-    transform: scale(1.05);
-}
-
-section {
-    padding: 50px 20px;
-    text-align: center;
-}
-
-h2 {
-    color: #2c3e50;
-}
-
-p {
-    color: #7f8c8d;
-}
-
-img {
-    max-width: 100%;
-    height: auto;
-    border-bottom: 1px solid #bdc3c7;
-    margin-bottom: 15px;
+.content {
+  margin-left: 200px; /* Adjust this value based on your sidebar's width */
+  padding: 16px;
+  transition: margin-left 0.5s;
 }
