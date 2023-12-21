@@ -48,7 +48,7 @@ body {
 }
 
 .content {
-  margin-left: 200px; /* Adjust this value based on your sidebar's width */
+  margin-left: 200px;
   padding: 16px;
   transition: margin-left 0.5s;
 }
