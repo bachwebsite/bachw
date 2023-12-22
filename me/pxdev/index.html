@@ -1,0 +1,144 @@
+<head>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=JetBrains+Mono:wght@600&family=Source+Code+Pro:wght@300&family=Ubuntu+Mono:wght@700&display=swap');
+    
+        body {
+            background-image: url('/bg.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 100vh;
+            overflow:hidden;
+        }
+        div.container {
+            position:relative;
+            align-items: center;
+            justify-content: center;
+            height:100%;
+        }
+        div.info {
+            box-shadow: 0 0 100px 100px black;
+            position:absolute;
+            margin:0;
+            border-radius: 10px;
+            text-align: center;
+            top: 50%;
+            -ms-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            left: 50%;
+            right:0;
+            bottom:0;
+            width:300px;
+            height:800px;
+            background-color: black;
+        }
+    
+        h1.hedder {
+            color:white;
+            font-family:'Source Code Pro', monospace;
+        }
+        h1#hiddn {
+            font-size: x-small;
+        }
+        h2.abt {
+            color:white;
+            font-family: 'Inter';
+        }
+        a {text-decoration: none;}
+        a.pxdev {
+            color:green;
+        }
+        a.wbdev {
+            color:purple;
+        }
+        a.ubsrw {
+            color:darkorchid;
+        }
+        .href-div-shower {
+            position: absolute;
+        top: 50%;
+        left: -180px; /* Adjust the tooltip position */
+        padding: 10px;
+        background-color: #555; /* Gray background */
+        color: #fff;
+        white-space: nowrap;
+        display: none;
+        }
+        .button#discord {
+            text-align: center;
+            position: absolute;
+            background: gray;
+            width: 20px; /* Set the width and height to the same value for a circle */
+            height: 20px;
+            left: 42%;
+            bottom: -15;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%; /* Use border-radius to create a circle */
+        }
+        .button#bmac {
+            text-align: center;
+            position: absolute;
+            background: gray;
+            width: 20px; /* Set the width and height to the same value for a circle */
+            height: 20px;
+            left: 20%;
+            bottom: -15;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%; /* Use border-radius to create a circle */
+        }
+        .button#cashapp {
+            position: absolute;
+            background: gray;
+            width: 20px; /* Set the width and height to the same value for a circle */
+            height: 20px;
+            left: 65%;
+            bottom: -15;
+            padding: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%; /* Use border-radius to create a circle */
+        }
+        .textbox-class {
+            color:darkseagreen;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="container">
+        <div class="info">
+            <h3 style="color: aliceblue;"><a href="/"> < back home </a></h3>
+            <h1 class="hedder">Proxy Development</h1>
+            <h1 id="hiddn">ur not supost to see this</h1>
+            <h2 class="abt">You probably clicked this because you want to know more about 
+                <a class="pxdev" href="./">proxy development</a>
+                . Proxy development is the design of proxies, or 
+                <a href="//765655656.vercel.app" style="color: aquamarine;">"unblockers"</a>. 
+                Many look smiliar, and function similar, but they mostly get
+                 <a class="wbdev" href="https://blocked.goguardian.com/">restricted, or blocked</a>,
+                so that the consumers can use them. 
+                 That's why there are many different <a style="color: forestgreen;" href="https://developer.mozilla.org/en-US/docs/Learn/Common_questions/Web_mechanics/What_is_a_URL">URLs</a> of them. 
+                 Most work similarly, you put a URL into the <a href="https://www.w3schools.com/tags/att_input_type_text.asp" style="color:deeppink">searchbar</a>, 
+                 the proxy makes a duplicate identical website inside of a <a href="https://www.computerhope.com/jargon/s/subdirec.htm" style="color: olive;">subdirectory</a>,
+                then it will <a style="color:dodgerblue;" href="https://www.w3schools.com/howto/howto_js_redirect_webpage.asp">redirect</a> 
+                or 
+                <a style="color:greenyellow;" href="https://www.w3schools.com/tags/tag_iframe.asp">iframe</a> the proxied subdirectory.</h2>
+            
+        </div>
+    </div>
+    <script>
+        function showText(text) {
+            var textbox = document.createElement('p');
+            textbox.textContent = String(text);
+            textbox.className = 'textbox-class';
+        }
+    </script>
+    
+    </body>

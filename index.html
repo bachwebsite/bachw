@@ -1,0 +1,137 @@
+<head>
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=JetBrains+Mono:wght@600&family=Source+Code+Pro:wght@300&family=Ubuntu+Mono:wght@700&display=swap');
+
+    body {
+        background-image: url('bg.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        height: 100vh;
+        overflow:hidden;
+    }
+    div.container {
+        position:relative;
+        align-items: center;
+        justify-content: center;
+        height:100%;
+    }
+    div.info {
+        box-shadow: 0 0 100px 100px black;
+        position:absolute;
+        margin:0;
+        border-radius: 10px;
+        text-align: center;
+        top: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        left: 50%;
+        right:0;
+        bottom:0;
+        width:300px;
+        height:360px;
+        background-color: black;
+    }
+
+    h1.hedder {
+        color:white;
+        font-family:'Source Code Pro', monospace;
+    }
+    h1#hiddn {
+        font-size: x-small;
+    }
+    h2.abt {
+        color:white;
+        font-family: 'Inter';
+    }
+    a {text-decoration: none;}
+    a.pxdev {
+        color:green;
+    }
+    a.wbdev {
+        color:purple;
+    }
+    a.ubsrw {
+        color:darkorchid;
+    }
+    .href-div-shower {
+        position: absolute;
+    top: 50%;
+    left: -180px; /* Adjust the tooltip position */
+    padding: 10px;
+    background-color: #555; /* Gray background */
+    color: #fff;
+    white-space: nowrap;
+    display: none;
+    }
+    .button#discord {
+        text-align: center;
+        position: absolute;
+        background: gray;
+        width: 20px; /* Set the width and height to the same value for a circle */
+        height: 20px;
+        left: 42%;
+        bottom: -15;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; /* Use border-radius to create a circle */
+    }
+    .button#bmac {
+        text-align: center;
+        position: absolute;
+        background: gray;
+        width: 20px; /* Set the width and height to the same value for a circle */
+        height: 20px;
+        left: 20%;
+        bottom: -15;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; /* Use border-radius to create a circle */
+    }
+    .button#cashapp {
+        position: absolute;
+        background: gray;
+        width: 20px; /* Set the width and height to the same value for a circle */
+        height: 20px;
+        left: 65%;
+        bottom: -15;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%; /* Use border-radius to create a circle */
+    }
+</style>
+</head>
+<body>
+<div class="container">
+    <div class="info">
+        <h1 class="hedder">BREAKIUM</h1>
+        <h1 id="hiddn">ur not supost to see this</h1>
+        <h2 class="abt">Hey, I'm breakium and I work with <a onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)" class="pxdev" href="/me/pxdev/">proxy development</a>, <a  onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)"class="wbdev" href="/me/wbdev/">web development</a>, and <a class="vyper" href="/vp/vyper/" onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)">a team</a> that works with <a href="https://discord.gg/WH5sBXm7n9" class="ubsrw" onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)">unblocking school-blocked websites.</a></h2>
+        <a href="https://discord.gg/WH5sBXm7n9"><div class="button" id="discord"><img src="discord.png" width="20" height="20"></div></a>
+        <a href="https://www.buymeacoffee.com/bach"><div class="button" id="bmac"><img src="bmac.png" width="15" height="20"></div></a>
+        <a href="https://cash.app/$bachmcg"><div class="button" id="cashapp"><img src="cashapp.png" width="40" height="40"></div></a>
+    </div>
+</div>
+<script>
+    function showHREF(r){
+        var hrefDiv = document.createElement('div');
+        hrefDiv.className = "href-div-shower";
+        hrefDiv.innerText = "This will take you to: " + r.getAttribute('href');
+        r.appendChild(hrefDiv);
+    }
+    function hideHREF(r){
+        var hrefDiv = r.querySelector('.href-div-shower');
+        if (hrefDiv){
+            hrefDiv.remove();
+        }
+    }
+</script>
+
+</body>
