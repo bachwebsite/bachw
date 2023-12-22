@@ -113,7 +113,7 @@
     <div class="info">
         <h1 class="hedder">BREAKIUM</h1>
         <h1 id="hiddn">ur not supost to see this</h1>
-        <h2 class="abt">Hey, I'm breakium and I work with <a onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)" class="pxdev" href="/me/pxdev/">proxy development</a>, <a  onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)"class="wbdev" href="/me/wbdev/">web development</a>, and <a class="vyper" href="/vp/vyper/" onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)">a team</a> that works with <a href="https://discord.gg/WH5sBXm7n9" class="ubsrw" onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)">unblocking school-blocked websites.</a></h2>
+        <h2 class="abt">Hey, I'm <a onclick="togglePopup()" style="color:blue;">breakium</a> and I work with <a onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)" class="pxdev" href="/me/pxdev/">proxy development</a>, <a  onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)"class="wbdev" href="/me/wbdev/">web development</a>, and <a class="vyper" href="/vp/vyper/" onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)">a team</a> that works with <a href="https://discord.gg/WH5sBXm7n9" class="ubsrw" onmouseenter="showHREF(this)" onmouseleave="hideHREF(this)">unblocking school-blocked websites.</a></h2>
         <a href="https://discord.gg/WH5sBXm7n9"><div class="button" id="discord"><img src="discord.png" width="20" height="20"></div></a>
         <a href="https://www.buymeacoffee.com/bach"><div class="button" id="bmac"><img src="bmac.png" width="15" height="20"></div></a>
         <a href="https://cash.app/$bachmcg"><div class="button" id="cashapp"><img src="cashapp.png" width="40" height="40"></div></a>
@@ -132,6 +132,12 @@
             hrefDiv.remove();
         }
     }
+    function togglePopup() {
+            var overlay = document.getElementById('overlay');
+            var popup = document.getElementById('popup');
+            overlay.style.display = (overlay.style.display == 'block') ? 'none' : 'block';
+            popup.style.display = (popup.style.display == 'block') ? 'none' : 'block';
+        }
 </script>
 
 </body>
